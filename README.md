@@ -4,19 +4,34 @@ Este é o nosso projeto de grupo para desenvolver um aplicativo React Native com
 
 ## Tarefas
 
-- [ ] Criar uma página "Membros" no menu lateral que levará para uma tela com a foto de todos os participantes do grupo. Cada foto levará para uma tela do participante.
+- Criar uma página "Membros" no menu lateral que levará para uma tela com a foto de todos os participantes do grupo. Cada foto levará para uma tela do participante.
+    - [X] Criar uma opção "Membros" no menu lateral.
+    - [X] Ao clicar em "Membros", redirecionar para uma tela que mostra as fotos de todos os participantes do grupo.
+    - [ ] Garantir que ao clicar na foto de um participante, o usuário seja levado para a tela pessoal desse participante.
+
   
   - **Pontuação**: 2,0 pontos
 
 - [ ] Cada participante terá uma página personalizada. Portanto, além da tela de "Membros", haverá mais 4 telas (uma para cada). Estas páginas incluirão uma breve descrição sobre o participante, sua foto, e links para seus perfis Github e LinkedIn.
   
-  - Referência para linking: [React Native Linking Docs](https://reactnative.dev/docs/linking#openurl)
+  - [ ] Criar 4 telas individuais (uma para cada participante).
+        - [ ] Para o Participante 1:
+            - [ ] Adicionar foto.
+            - [ ] Escrever uma breve descrição/biografia.
+            - [ ] Adicionar links para Github e LinkedIn utilizando [Linking](https://reactnative.dev/docs/linking#openurl).
+        - [ ] Para o Participante 2: (repita as sub-tarefas acima).
+        - [ ] Para o Participante 3: (repita as sub-tarefas acima).
+        - [ ] Para o Participante 4: (repita as sub-tarefas acima).
   
   - **Pontuação**: 6,0 pontos
 
 - [ ] Verificar a conexão com o Firebase. Se não estiver conectando corretamente, criar um projeto próprio no Firebase e adicionar o "google-services.json" no local apropriado. 
   
-  - Configuração de referência: [Firebase Setup](https://rnfirebase.io/#2-android-setup)
+   - [ ] Verificar se o projeto está conectando corretamente ao Firebase.
+    - [ ] Se não estiver conectando:
+        - [ ] Criar um novo projeto no Firebase.
+        - [ ] Obter o arquivo "google-services.json".
+        - [ ] Colocar o arquivo "google-services.json" na pasta `android/app/` conforme [instruções](https://rnfirebase.io/#2-android-setup).
   
   - **Nota**: Caso não seja possível completar esta tarefa, remover a verificação do arquivo "index.tsx" na pasta de rotas.
   
