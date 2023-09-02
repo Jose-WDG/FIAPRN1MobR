@@ -28,8 +28,8 @@ export function LoggedStack() {
         component={MemberDetail}
         options={{
           headerShown: true,
-          title: 'Membros',
-          headerTitle: 'Membros',
+          title: 'Detalhes',
+          headerTitle: 'Detalhes',
         }}
       />
     </Stack.Navigator>

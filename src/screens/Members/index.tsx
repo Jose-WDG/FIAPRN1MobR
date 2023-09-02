@@ -8,6 +8,34 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+// Componente MembroItem
+function MembroItem({ item, onPress }) {
+  return (
+    <TouchableOpacity style={styles.membroContainer} onPress={onPress}>
+      <Image source={{ uri: item.imagemUrl }} style={styles.membroImage} />
+      <Text style={styles.membroNome}>{item.nome}</Text>
+    </TouchableOpacity>
+  );
+}
+
+export function Membros({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Participantes do Grupo</Text>
+      <FlatList
+        data={members}
+        keyExtractor={item => item.id.toString()}
+        renderItem={({ item }) => (
+          <MembroItem 
+            item={item}
+            onPress={() => navigation.navigate('MemberDetail', { membro: item })}
+          />
+        )}
+      />
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -18,19 +46,28 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    textAlign: 'center',
   },
   membroContainer: {
-    marginBottom: 20,
+    flexDirection: 'row',
+    padding: 10,
+    borderRadius: 10,
+    backgroundColor: 'white',
+    marginBottom: 10,
     alignItems: 'center',
+    elevation: 3,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
   },
   membroImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    marginBottom: 10,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginRight: 20,
   },
   membroNome: {
     fontSize: 18,
+    fontWeight: '500',
   },
 });
 
@@ -67,10 +104,6 @@ const members: Membro[] = [
         name: 'Github',
         url: 'https://github.com/Jose-WDG',
       },
-      {
-        name: 'BRQ digital solutions',
-        url: 'https://www.trakto.io',
-      },
     ],
   },
   {
@@ -90,30 +123,6 @@ const members: Membro[] = [
         name: 'Github',
         url: 'https://github.com/FelipeCostaAraujo',
       },
-      {
-        name: 'Trakto',
-        url: 'https://www.trakto.io',
-      },
     ],
   },
 ];
-
-export function Membros({navigation}) {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Participantes do Grupo</Text>
-      <FlatList
-        data={members}
-        keyExtractor={item => item.id.toString()}
-        renderItem={({item}) => (
-          <TouchableOpacity
-            style={styles.membroContainer}
-            onPress={() => navigation.navigate('MemberDetail', {membro: item})}>
-            <Image source={{uri: item.imagemUrl}} style={styles.membroImage} />
-            <Text style={styles.membroNome}>{item.nome}</Text>
-          </TouchableOpacity>
-        )}
-      />
-    </View>
-  );
-}
