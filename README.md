@@ -12,7 +12,7 @@ Este é o nosso projeto de grupo para desenvolver um aplicativo React Native com
   
   - **Pontuação**: 2,0 pontos
 
-- [ ] Cada participante terá uma página personalizada. Portanto, além da tela de "Membros", haverá mais 4 telas (uma para cada). Estas páginas incluirão uma breve descrição sobre o participante, sua foto, e links para seus perfis Github e LinkedIn.
+- [X] Cada participante terá uma página personalizada. Portanto, além da tela de "Membros", haverá mais 4 telas (uma para cada). Estas páginas incluirão uma breve descrição sobre o participante, sua foto, e links para seus perfis Github e LinkedIn.
   
   - [X] Criar 4 telas individuais (uma para cada participante).
         - [X] Para o Participante 1:
@@ -23,7 +23,7 @@ Este é o nosso projeto de grupo para desenvolver um aplicativo React Native com
   
   - **Pontuação**: 6,0 pontos
 
-- [ ] Verificar a conexão com o Firebase. Se não estiver conectando corretamente, criar um projeto próprio no Firebase e adicionar o "google-services.json" no local apropriado. 
+- [X] Verificar a conexão com o Firebase. Se não estiver conectando corretamente, criar um projeto próprio no Firebase e adicionar o "google-services.json" no local apropriado. 
   
    - [x] Verificar se o projeto está conectando corretamente ao Firebase.
     - [X] Se não estiver conectando:
@@ -58,5 +58,8 @@ Substituir `{user ? <LoggedStack /> : <UnloggedStack />}` por `<LoggedStack />`.
 A entrega do projeto será feita através de um arquivo `.txt` contendo o link para o repositório do projeto no GitHub.
 
 ---
+## Demonstração
 
-Bons códigos e boa sorte a todos os participantes! :D
+|                       Tela e Menu Membros                        |                    Redirecionamento via link                    |
+|:----------------------------------------------------------------:|:---------------------------------------------------------------:|
+|    <img src="docs/react-native-final-preview.gif" width=80%>     | <img src="docs/react-native-final-links-preview.gif" width=80%> |
