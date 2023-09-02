@@ -2,6 +2,15 @@
 
 Este é o nosso projeto de grupo para desenvolver um aplicativo React Native com integração ao Firebase.
 
+---
+## Demonstração
+
+|                       Tela e Menu Membros                        |                    Redirecionamento via link                    |
+|:----------------------------------------------------------------:|:---------------------------------------------------------------:|
+|    <img src="doc/react-native-final-preview.gif" width=80%>      | <img src="doc/react-native-final-links-preview.gif" width=80%>  |
+
+---
+
 ## Tarefas
 
 - Criar uma página "Membros" no menu lateral que levará para uma tela com a foto de todos os participantes do grupo. Cada foto levará para uma tela do participante.
@@ -58,8 +67,3 @@ Substituir `{user ? <LoggedStack /> : <UnloggedStack />}` por `<LoggedStack />`.
 A entrega do projeto será feita através de um arquivo `.txt` contendo o link para o repositório do projeto no GitHub.
 
 ---
-## Demonstração
-
-|                       Tela e Menu Membros                        |                    Redirecionamento via link                    |
-|:----------------------------------------------------------------:|:---------------------------------------------------------------:|
-|    <img src="doc/react-native-final-preview.gif" width=80%>     | <img src="doc/react-native-final-links-preview.gif" width=80%> |
