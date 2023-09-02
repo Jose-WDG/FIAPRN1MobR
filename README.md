@@ -62,4 +62,4 @@ A entrega do projeto será feita através de um arquivo `.txt` contendo o link p
 
 |                       Tela e Menu Membros                        |                    Redirecionamento via link                    |
 |:----------------------------------------------------------------:|:---------------------------------------------------------------:|
-|    <img src="docs/react-native-final-preview.gif" width=80%>     | <img src="docs/react-native-final-links-preview.gif" width=80%> |
+|    <img src="doc/react-native-final-preview.gif" width=80%>     | <img src="doc/react-native-final-links-preview.gif" width=80%> |
