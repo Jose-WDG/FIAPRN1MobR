@@ -6,6 +6,7 @@ import {LoadingScreen} from '@components';
 import {LoggedStack} from './logged';
 import {UnloggedStack} from './unlogged';
 import {useRoutes} from './useRoutes';
+import AppNavigator from 'src/screens/Navigation';
 
 export function Routes() {
   const {
