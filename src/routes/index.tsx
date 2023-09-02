@@ -24,7 +24,7 @@ export function Routes() {
       ref={navigationRef}
       onReady={onScreenReady}
       onStateChange={onScreenStateChange}>
-      {!user ? <LoggedStack /> : <UnloggedStack />}
+      {!user ? <LoggedStack /> : <UnloggedStack />} 
     </NavigationContainer>
   );
 }

@@ -3,21 +3,35 @@ import React from 'react';
 
 import {LoggedDrawer} from './drawer';
 import type {ILoggedStack} from './types';
-import {Membros} from '../../screens/Members';
-import {MemberDetail} from '../../screens/MemberDetail';
+import {MemberDetail} from '@screens';
+import {DrawerNavigationOptions} from '@react-navigation/drawer';
+import {$COLORS} from '@utils';
 
 const Stack = createStackNavigator<ILoggedStack>();
 
+const stackOptions = {
+  headerTintColor: $COLORS.white,
+  headerShadowVisible: false,
+  headerStyle: {
+    backgroundColor: $COLORS.primary,
+  },
+  headerShown: false,
+  animationEnabled: false,
+};
+
 export function LoggedStack() {
   return (
-    <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-        animationEnabled: false,
-      }}>
+    <Stack.Navigator screenOptions={stackOptions}>
       <Stack.Screen name="Drawer" component={LoggedDrawer} />
-      <Stack.Screen name="Membros" component={Membros} />
-      <Stack.Screen name="MemberDetail" component={MemberDetail} />
+      <Stack.Screen
+        name="MemberDetail"
+        component={MemberDetail}
+        options={{
+          headerShown: true,
+          title: 'Membros',
+          headerTitle: 'Membros',
+        }}
+      />
     </Stack.Navigator>
   );
 }
