@@ -48,6 +48,8 @@ Este é o nosso projeto de grupo para desenvolver um aplicativo React Native com
 
 Substituir `{user ? <LoggedStack /> : <UnloggedStack />}` por `<LoggedStack />`.
 
+> Por padrão, a regra está invertida, portanto sempre abrira a área logada. ex: `{!user ? <LoggedStack /> ... ` para `{user ? <LoggedStack /> ... `
+
 ## Estrutura do Projeto
 
 - Tela 1
